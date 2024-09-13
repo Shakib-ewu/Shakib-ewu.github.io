@@ -3,21 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Sakib Sarkar | QA Developer</title>
-    <meta name="description" content="Learn more about Sakib Sarkar, QA Developer.">
-    <meta name="author" content="Sakib Sarkar">
-
-    <!-- Favicons -->
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-
-    <!-- Stylesheets -->
+    <title>Sakib Sarkar | QA Developer</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
@@ -30,18 +19,34 @@
             justify-content: center;
             text-align: center;
         }
-        .nav-buttons {
-            margin: 10px 0;
+        .intro {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: space-between; /* Distribute space between elements */
+  padding: 15px;
+}
+        .intro img {
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image covers the circle without distortion */
+            margin-bottom: 20px;
         }
-        .profile-img {
-            width: 300px; /* Square image size */
-            height: 300px; /* Square image size */
-            border-radius: 0; /* Square image with no rounded corners */
-            object-fit: cover;
-            border: 2px solid #007bff; /* Optional: Border around image */
-            margin-bottom: 10px;
-            display: block;
-            margin: 0 auto;
+        .intro h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #333; /* Dark text color */
+            transition: color 0.3s; /* Smooth transition for hover effect */
+        }
+        .intro h1:hover {
+            color: #007bff; /* Change color on hover */
+        }
+        .intro p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555; /* Slightly lighter text color */
         }
         .btn-outline-primary {
             margin: 0 10px;
@@ -54,59 +59,145 @@
             background-color: #007bff;
             border-color: #007bff;
         }
+        .project-card {
+            border: none;
+            border-radius: 8px; /* Rounded corners for the card */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for card */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px); /* Slight lift effect */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333; /* Dark text color */
+        }
+        .section-title .divider {
+            width: 60px;
+            height: 4px;
+            background-color: #007bff;
+            margin: 0 auto 20px;
+        }
         footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
             background-color: #222;
             color: white;
             padding: 10px 0;
             text-align: center;
-            width: 100%;
-            position: relative;
-            bottom: 0;
         }
-        .footer-content {
-            margin-bottom: 5px;
+        /* Adjust navigation button container to make it more prominent */
+        .intro .text-center.my-4 {
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
 
-    <section id="about" class="py-5">
+<div class="intro">
+    
+    <!-- Navigation Buttons -->
+    <div class="text-center my-4">
+        <a href="index.html" class="btn btn-outline-primary">Home</a>
+        <a href="about.html" class="btn btn-outline-primary">About</a>
+        <a href="projects.html" class="btn btn-outline-primary">Projects</a>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
         <div class="container">
-          <h1>About</h1>
-          <nav class="nav-buttons text-center"> <a href="index.html" class="btn btn-outline-primary">Home</a>
-            <a href="about.html" class="btn btn-outline-primary">About</a>
-            <a href="projects.html" class="btn btn-outline-primary">Projects</a>
-          </nav>
-        </div>
-      </section>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                   
-                    <img src="img.jpg" class="profile-img mb-3" alt="Sakib Sarkar">
-                    <p class="lead mb-4">
-                        Hi there 👋,<br><br>
-                        I’m Sakib Sarkar, a QA Developer with a focus on UI automation and CI/CD integration. At Bevy Commerce, where I've been working since February 2022, I specialize in creating and executing comprehensive test plans, developing automation scripts with JavaScript, Cypress, and Mocha, and integrating CI/CD pipelines using GitHub Actions and Jenkins. <br><br> My role involves collaborating with cross-functional teams to enhance software quality, with a particular emphasis on Shopify app development and WordPress theme testing.<br><br>
-                        With 2.5 years of experience, I have worked on a range of projects from eCommerce solutions to API testing.<br><br> My passion for continuous learning drives me to deliver high-impact results through innovative testing solutions and process improvements. I thrive in collaborative environments and am committed to building robust, scalable systems through meticulous testing and effective issue management. If you are interested,<a href="Resume_Sakib_Sarkar.pdf" >here’s my CV</a>
-                    </p>
+            <div class="section-title text-center mb-4">
+                <h2>Projects</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row">
+                <!-- Project Item 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://github.com/Shakib-ewu/Cypress-Automation_CI-CD-intregation" class="project-link">RubinoShoes</a></h5>
+                            <p class="card-text">Cypress automation CI/CD<br>Tools: Cypress, Mocha Awesome, POM, CI/CD, GitHub Actions</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://github.com/Shakib-ewu/Cypress_web_automation" class="project-link">Cypress_web_automation</a></h5>
+                            <p class="card-text">Web Automation<br>Tools: Cypress, Mocha Awesome, BDD</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 3 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://github.com/Shakib-ewu/VWO_CypressAutomation" class="project-link">VWO Full Site Cypress Automation</a></h5>
+                            <p class="card-text">Full Site Automation<br>Tools: Cypress, Mocha Awesome, BDD</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 4 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://github.com/Shakib-ewu/Cydeo_Fulls-site_TestAutomation" class="project-link">Cydeo_Full-site_TestAutomation</a></h5>
+                            <p class="card-text">Full Site Test Automation<br>Tools: Cypress, Mocha Awesome, BDD</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 5 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://github.com/Shakib-ewu/Any_Do_Web_Automation" class="project-link">Any_Do_Web_Automation</a></h5>
+                            <p class="card-text">Web Automation<br>Tools: Eclipse, Java, TestNG, Maven</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 6 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://github.com/Shakib-ewu/REST_Assured_API_Automation" class="project-link">REST_Assured_API_Automation</a></h5>
+                            <p class="card-text">API Automation<br>Tools: Eclipse, Java, JSON-server, Rest API</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 7 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://github.com/Shakib-ewu/InetBanking_WebAutomation" class="project-link">InetBanking_WebAutomation</a></h5>
+                            <p class="card-text">Web Automation<br>Tools: Eclipse, Java, TestNG</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 8 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://github.com/Shakib-ewu/API_Postman_newman" class="project-link">API_Postman_newman</a></h5>
+                            <p class="card-text">API Testing<br>Tools: Postman, Newman</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+</div>
 
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Sakib Sarkar. All rights reserved.</p>
+</footer>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            &copy; 2024 Sakib Sarkar
-        </div>
-    </footer>
-
-    
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
