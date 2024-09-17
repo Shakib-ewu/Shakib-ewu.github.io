@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #F5F5F5; /* Background color for the entire page */
+            background-color: #F5F5F5;
             margin: 0;
             height: 100vh;
             display: flex;
@@ -18,51 +18,60 @@
             justify-content: center;
             text-align: center;
         }
+
         .intro {
-            max-width: 600px; /* Maximum width for better readability */
+            max-width: 600px;
             width: 100%;
-            /* Removed padding, background-color, border-radius, and box-shadow */
         }
+
         .intro h1 {
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 20px;
-            transition: color 0.3s; /* Smooth transition for hover effect */
+            transition: color 0.3s;
         }
+
         .intro h1:hover {
-            color: #007bff; /* Change color on hover */
+            color: #007bff;
         }
+
         .intro p {
             font-size: 1.2rem;
         }
+
         .intro img {
-            width: 150px; /* Adjust size as needed */
-            height: 150px; /* Adjust size as needed */
-            border-radius: 50%; /* Makes the image circular */
-            object-fit: cover; /* Ensures the image covers the circle without distortion */
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
             margin-bottom: 20px;
         }
+
         .links a {
             margin: 0 15px;
             text-decoration: none;
-            font-size: 1.5rem; /* Adjust icon size */
-            color: #6c757d; /* Grey color */
-            transition: color 0.3s; /* Smooth transition for hover effect */
+            font-size: 1.5rem;
+            color: #6c757d;
+            transition: color 0.3s;
         }
+
         .links a:hover {
-            color: #343a40; /* Darker grey for hover effect */
+            color: #343a40;
         }
+
         .btn-outline-primary {
             margin: 0 10px;
             color: #007bff;
             border-color: #007bff;
             transition: color 0.3s, background-color 0.3s, border-color 0.3s;
         }
+
         .btn-outline-primary:hover {
             color: #fff;
             background-color: #007bff;
             border-color: #007bff;
         }
+
         footer {
             position: fixed;
             bottom: 0;
@@ -72,6 +81,33 @@
             padding: 10px 0;
             text-align: center;
         }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .intro h1 {
+                font-size: 2rem;
+            }
+
+            .intro p {
+                font-size: 1rem;
+            }
+
+            .intro img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .btn-outline-primary {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            .links a {
+                font-size: 1.2rem;
+                margin: 0 10px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -83,9 +119,9 @@
 
     <!-- Navigation Buttons -->
     <div class="text-center my-4">
-        <a href="./index.html" class="btn btn-outline-primary">Home</a>
-        <a href="./about.html" class="btn btn-outline-primary">About</a>
-        <a href="./projects.html" class="btn btn-outline-primary">Projects</a>
+        <a href="index.html" class="btn btn-outline-primary">Home</a>
+        <a href="about.html" class="btn btn-outline-primary">About</a>
+        <a href="projects.html" class="btn btn-outline-primary">Projects</a>
     </div>
 
     <!-- Social Media Links -->
