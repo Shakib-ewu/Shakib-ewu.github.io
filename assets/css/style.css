@@ -316,7 +316,7 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
-  position: fixed;
+ 
   margin-bottom: 15px;
   max-height: 112px;
   overflow: hidden;
@@ -1446,6 +1446,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar {
+    position: sticky;
     max-height: 180px;
     margin-bottom: 30px;
   }
