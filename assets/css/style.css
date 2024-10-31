@@ -316,6 +316,7 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
+  position: fixed;
   margin-bottom: 15px;
   max-height: 112px;
   overflow: hidden;
@@ -334,7 +335,7 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 .info-content .name {
@@ -429,7 +430,13 @@ main {
 
 .contact-info address { font-style: normal; }
 
+.title {
+  margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+
 .social-list {
+  margin-top: 20px; 
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -497,7 +504,7 @@ main {
 .navbar-link {
   color: var(--light-gray);
   font-size: var(--fs-8);
-  padding: 20px 7px;
+  padding: 15px 10px;
   transition: color var(--transition-1);
 }
 
@@ -973,6 +980,24 @@ main {
   position: relative;
   margin-bottom: 25px;
 }
+
+/* Container for positioning the icon overlay */
+.blog-banner-box {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect for images */
+.blog-banner-box img {
+  transition: transform 0.3s ease;
+}
+
+.blog-banner-box:hover img {
+  transform: scale(1.1);
+}
+
+
+
 
 .filter-select {
   background: var(--eerie-black-2);
@@ -1984,4 +2009,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* flex: auto; */
   /* border : 1px solid #ccc; */
 
+
+  
 }
