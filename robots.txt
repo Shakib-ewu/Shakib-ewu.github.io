@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://shakib-ewu.github.io/sitemap.xml
+Host: https://shakib-ewu.github.io
