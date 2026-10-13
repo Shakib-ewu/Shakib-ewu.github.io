@@ -335,7 +335,15 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-box img {
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .info-content .name {
@@ -1454,8 +1462,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar.active { max-height: 584px; }
 
   .sidebar-info { gap: 25px; }
-
-  .avatar-box { border-radius: 30px; }
 
   .avatar-box img { width: 120px; }
 
